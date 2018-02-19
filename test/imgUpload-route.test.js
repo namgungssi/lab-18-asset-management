@@ -4,7 +4,7 @@
 
 const request = require('superagent');
 const expect = require('expect');
-const Image = require('../model/image');
+const Image = require('../models/image');
 const mongoose = require('mongoose');
 
 process.env.DB_URL = 'mongodb://<dbuser>:<dbpassword>@ds241668.mlab.com:41668/img';
