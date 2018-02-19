@@ -1,10 +1,10 @@
 # To run via test:
-start the database mkdir db mongod --dbpath=./db
-run tests in a 2nd terminal npm test
+1st terminal : mkdir db mongod --dbpath=./db
+2nd terminal : npm test
 
 
 
-# model/image: 
+# model/image:
 To run via command line:
 
 1. start the database mkdir db mongod --dbpath=./db
