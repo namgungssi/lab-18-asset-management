@@ -5,7 +5,7 @@
 const request = require('superagent');
 const expect = require('expect');
 const Image = require('../model/image');
-
+const mongoose = require('mongoose');
 
 process.env.DB_URL = 'mongodb://<dbuser>:<dbpassword>@ds241668.mlab.com:41668/img';
 process.env.AWS_BUCKET = 'namgungssi';
@@ -31,7 +31,7 @@ describe('POST', () => {
   test('creating a new image model returns an ID and a 200', () => {
 
     return request
-      .post(`${HOST}:${PORT}/${API}/image`)
+      .post('localhost:4000/image')
       .send({ name:'me', path:'../model/files/8f532c2930ad87867d9f22c2ed2601.jpg' })
       .then(res => {
         expect(res.status).toEqual(200);
