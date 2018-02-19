@@ -16,4 +16,4 @@ To run via command line:
 This returns an id
 
 4. make a POST to upload the image file
-http -f POST localhost:3000/api/1.0/image/<_id> name='photo' photo@<absolute_path_to_file>
+http -f POST localhost:3000/api/1.0/image/<_id> name='image' photo@<absolute_path_to_file>
