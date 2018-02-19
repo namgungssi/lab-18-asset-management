@@ -2,7 +2,7 @@
 
 
 
-const Image = require(__dirname + '/../model/image');
+const Image = require(__dirname + '/../models/image');
 const aws = require('aws-sdk');
 const multer = require('multer');
 const jsonParser = require('body-parser').json();

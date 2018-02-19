@@ -32,7 +32,7 @@ describe('POST', () => {
 
     return request
       .post('localhost:4000/image')
-      .send({ name:'me', path:'../model/files/8f532c2930ad87867d9f22c2ed2601.jpg' })
+      .send({ name:'me', path:'../models/files/8f532c2930ad87867d9f22c2ed2601.jpg' })
       .then(res => {
         expect(res.status).toEqual(200);
         expect(res.text).not.toBe(undefined);
@@ -46,7 +46,7 @@ describe('POST', () => {
       .post(`${HOST}:${PORT}/${API}/image/${imgID}/new-image`)
       .field('title', 'me')
       .set({'Content-Type':'multipart/form-data'})
-      .attach('photo', `${__dirname}/../model/files/8f532c2930ad87867d9f22c2ed2601.jpg`)
+      .attach('photo', `${__dirname}/../models/files/8f532c2930ad87867d9f22c2ed2601.jpg`)
       .then(res => {
         expect(res.status).toEqual(200);
         expect(res.text).not.toBe(undefined);
