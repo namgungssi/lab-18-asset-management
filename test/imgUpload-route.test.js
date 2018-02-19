@@ -7,7 +7,7 @@ const expect = require('expect');
 const Image = require('../model/image');
 
 
-process.env.DB_URL = 'mongodb://localhost:27017/fileUpload_stg';
+process.env.DB_URL = 'mongodb://<dbuser>:<dbpassword>@ds241668.mlab.com:41668/img';
 process.env.AWS_BUCKET = 'namgungssi';
 const PORT = 4000;
 const HOST = 'http://localhost';
